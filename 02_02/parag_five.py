@@ -1,0 +1,7 @@
+num1 = float(input("Enter float number: "))
+num2 = int(input("How many rounde? "))
+print()
+print('Yours number: ', num1)
+print('Round until: ', num1)
+print()
+print('Your rounded number: ', round(num1, num2))
