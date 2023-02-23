@@ -1,0 +1,2 @@
+https://www.w3schools.com/python/default.asp
+https://github.com/CodeAcademy-Online/python-new-material/wiki/Lesson-2:-Data-Types-and-Operations

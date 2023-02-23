@@ -1,0 +1,7 @@
+try:
+    birth_year = int(input("Enter Your bith year:\n"))
+    birth_year == int(birth_year)
+except TypeError:
+    logging.critical("No valid year! Please try again ...")
+except Exception as e:
+    logging.error(f"Error: {e}")
