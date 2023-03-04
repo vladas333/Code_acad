@@ -1,4 +1,4 @@
-s = 12253
+
 def arab_rom(s):
 	v=""
 	try:
