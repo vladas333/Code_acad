@@ -30,6 +30,3 @@ class Arabic_to_romanic:
 for_print = Arabic_to_romanic()
 number_for = 1958
 print(f"You give Arabic: {number_for} and get Romanic: {for_print.int_to_roman(number_for)}")
-#print(for_print.int_to_roman(number_for))
-# print(psas.int_to_roman(132))
-#

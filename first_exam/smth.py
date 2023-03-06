@@ -1,18 +1,25 @@
 class Read_from_terminal:
     def __init__(self):
-        self.select_conv: str = input("Please select which converting do (Arabic to Romanic write AR Romanic to Arabic write RA): ")
+        self.select_conv: str = input("Please select which converting do (*Arabic to Romanic write AR **Romanic to Arabic write RA): ")
         #self.number_for_change = self.int_to_roman()
         #self.romanic_number = self.romanic_to_arabic
+        if self.select_conv == "RA" or self.select_conv == "ra":
+           print(self.romanic_to_arabic(input(f"Please enter Romanic number: ")))
+        #elif self.select_conv == "AR":
+        elif self.select_conv == "AR" :
+            self.int_to_roman()
+           #return print("Arabic to Romanic")
+        return print(f"Program finish!!")
         
 
-    def which_converter_select(self):
-        if self.select_conv == "RA" or self.select_conv == "ra":
-           return self.romanic_to_arabic()
-        #elif self.select_conv == "AR":
-        else :
-            return self.int_to_roman()
-           #return print("Arabic to Romanic")
-        return print(f"try")
+    # def which_converter_select(self):
+    #     if self.select_conv == "RA" or self.select_conv == "ra":
+    #        self.romanic_to_arabic()
+    #     #elif self.select_conv == "AR":
+    #     else :
+    #         return self.int_to_roman()
+    #        #return print("Arabic to Romanic")
+    #     return print(f"try")
     
     def int_to_roman(self) -> str:
         self.number_for_change: int = int(input(f"Please enter Arabic number: "))
@@ -42,11 +49,11 @@ class Read_from_terminal:
                 
         return print(answer_ar)
     
-    def romanic_to_arabic(self):
-        self.romanic_number = input(f"Please enter Romanic number: ")
-        convert_to_arabic=0
+    def romanic_to_arabic(self, romanic_number) -> str:
+        self.romanic_number = romanic_number
+        convert_to_arabic = 0
         try:
-            romanic_number=str(romanic_number)
+            romanic_number = str(romanic_number)
             for temp_number in range(0, len(romanic_number)):
                 if romanic_number[temp_number]=='I' or romanic_number[temp_number]=='i':
                     try:

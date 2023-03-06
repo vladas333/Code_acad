@@ -1,6 +1,6 @@
 class Romanic_to_arabic:
     def romanic_arabic(self, romanic_number):
-        self.p = romanic_number
+        self.romanic_number = romanic_number
         convert_to_arabic=0
         try:
             romanic_number=str(romanic_number)
@@ -43,5 +43,5 @@ class Romanic_to_arabic:
             print("Invalid number")
         return convert_to_arabic
 for_print_two = Romanic_to_arabic()
-number_for_two = "MCMLIII"
+number_for_two = "I"
 print(f"{for_print_two.romanic_arabic(number_for_two)}")
