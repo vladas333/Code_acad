@@ -2,10 +2,21 @@ from typing import Union
 import logging
 
 logging.basicConfig(level=logging.DEBUG,filename='first_exam/data.log', filemode='a', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %H:%M:%S')
-        
-class ArabicToRomanic:
+
+class ReadFromTerminal:
     def __init__(self):
-        super().__init__(self)
+        # Start input select what to do
+        self.select_conv: str = input("Please select which converting do (*Arabic to Romanic write AR **Romanic to Arabic write RA): ")
+        if self.select_conv == "RA" or self.select_conv == "ra":
+           self.romanic_to_arabic(input(f"Please enter Romanic number: "))
+        elif self.select_conv == "AR" or self.select_conv == "ar":
+            self.arabic_to_roman(input(f"Please enter Arabic number: "))
+        else:
+            print("You selected something from Universe, please select property.")
+            #ReadFromTerminal.__init__()
+        return print(f"Program finish!!")
+        
+ 
     def arabic_to_roman(self, number_for_change: Union[str, int]) -> str:
         self.number_for_change = number_for_change
         logging.info(f"Arabic number {number_for_change} was inserted !!")
@@ -29,18 +40,16 @@ class ArabicToRomanic:
             
         try:
             number_for_change = int(number_for_change)           
-            answer_arabic = ""        
+            answer_ar = ""        
             for leter_for_change, number in rules:
                 while number_for_change >= number:
                     number_for_change -= number
-                    answer_arabic += leter_for_change
-            return print(f"Arabic number was: {self.number_for_change} converted to Romanic: {answer_arabic}")       
+                    answer_ar += leter_for_change
+            return print(answer_ar)       
         except (ValueError, TypeError):
             logging.error('Error occurred. Either "Arabic number" is not an integer or type of "Arabic number" is incompatible')
         return 
-class RomaniToArabic:  
-    def __init__(self):
-        super().__init__(self)
+    
     def romanic_to_arabic(self, romanic_number) -> str:
         self.romanic_number = romanic_number
         convert_to_arabic = 0
@@ -86,19 +95,6 @@ class RomaniToArabic:
             print("Invalid number")
         return print(f"Ramanic number was: {self.romanic_number} converted to Arabic: {convert_to_arabic}")
 
-class ReadFromTerminal(ArabicToRomanic, RomaniToArabic):
-    def __init__(self):
-        # Start input select what to do
-        #self.romanic_to_arabic = romanic_to_arabic
-        #self.arabic_to_romanic = arabic_to_roman
-        self.select_conv: str = input("Please select which converting do (*Arabic to Romanic write AR **Romanic to Arabic write RA): ")
-        if self.select_conv == "RA" or self.select_conv == "ra":
-            self.romanic_to_arabic(input(f"Please enter Romanic number: "))
-        elif self.select_conv == "AR" or self.select_conv == "ar":
-            self.arabic_to_roman(input(f"Please enter Arabic number: "))
-        else:
-            print("You selected something from Universe, please select property.")
-            #ReadFromTerminal.__init__()
-        return print(f"Program finish!!")
+
 
 print_answer = ReadFromTerminal()
