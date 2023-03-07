@@ -1,0 +1,7 @@
+07/03/2023 18:57:12 - root - INFO - Arabic number 1523 was inserted !!
+07/03/2023 19:12:16 - root - INFO - Arabic number 2132 was inserted !!
+07/03/2023 19:41:25 - root - INFO - Arabic number iii was inserted !!
+07/03/2023 19:41:25 - root - ERROR - Error occurred. Either "Arabic number" is not an integer or type of "Arabic number" is incompatible
+07/03/2023 19:41:43 - root - INFO - Romanic number 123 was inserted !!
+07/03/2023 19:42:30 - root - INFO - Romanic number mmmxxvi was inserted !!
+07/03/2023 19:50:45 - root - INFO - Arabic number 2132 was inserted !!
