@@ -18,3 +18,26 @@
 07/03/2023 20:55:30 - root - INFO - Romanic number ar was inserted !!
 07/03/2023 20:55:48 - root - INFO - Arabic number 1235 was inserted !!
 07/03/2023 20:56:00 - root - INFO - Romanic number MCCXXXV was inserted !!
+08/03/2023 18:02:12 - root - INFO - Arabic number 1587 was inserted !!
+08/03/2023 18:07:57 - root - INFO - Romanic number ass was inserted !!
+08/03/2023 18:08:18 - root - INFO - Romanic number MDLXXXVII was inserted !!
+08/03/2023 18:14:23 - root - INFO - Arabic number: xxm was inserted !!
+08/03/2023 18:14:23 - root - ERROR - Error occurred. Either "Arabic number" is not an integer or type of "Arabic number" is incompatible
+08/03/2023 18:14:34 - root - INFO - Arabic number: 2544 was inserted !!
+08/03/2023 18:15:56 - root - INFO - Romanic number: mmxxvi was inserted !!
+08/03/2023 18:23:32 - root - INFO - Arabic number: -255 was inserted !!
+08/03/2023 18:56:26 - root - INFO - Arabic number: -2 was inserted !!
+08/03/2023 18:57:04 - root - INFO - Arabic number: -5 was inserted !!
+08/03/2023 20:26:42 - root - INFO - Arabic number: 1256 was inserted !!
+08/03/2023 20:30:42 - root - INFO - Arabic number: 1574 was inserted !!
+08/03/2023 20:30:53 - root - INFO - Romanic number: MDLXXIV was inserted !!
+08/03/2023 20:39:58 - root - INFO - Arabic number: 1584 was inserted !!
+08/03/2023 20:40:16 - root - INFO - Romanic number: MDLXXXIV was inserted !!
+08/03/2023 20:40:51 - root - INFO - Arabic number: -15 was inserted !!
+08/03/2023 20:42:58 - root - INFO - Romanic number: mmxxmm was inserted !!
+09/03/2023 18:35:33 - root - INFO - Arabic number: 1258 was inserted !!
+09/03/2023 18:35:43 - root - INFO - Romanic number: MCCLVIII was inserted !!
+09/03/2023 18:38:55 - root - INFO - Arabic number: MCCLVIII was inserted !!
+09/03/2023 18:38:55 - root - ERROR - Error occurred. Either "Arabic number" is not an integer or type of "Arabic number" is incompatible
+09/03/2023 19:23:56 - root - INFO - Arabic number: 1254 was inserted !!
+09/03/2023 19:24:09 - root - INFO - Romanic number: MCCLIV was inserted !!

@@ -17,7 +17,7 @@ class ReadFromTerminal:
         return print(f"Program finish!!")
         
  
-    def arabic_to_roman(self, number_for_change: Union[str, int]) -> str:
+    def arabic_to_roman(self, number_for_change: Union[str, int]) -> None:
         self.number_for_change = number_for_change
         logging.info(f"Arabic number {number_for_change} was inserted !!")
         rules = [
@@ -50,7 +50,7 @@ class ReadFromTerminal:
             logging.error('Error occurred. Either "Arabic number" is not an integer or type of "Arabic number" is incompatible')
         return 
     
-    def romanic_to_arabic(self, romanic_number) -> str:
+    def romanic_to_arabic(self, romanic_number) -> None:
         self.romanic_number = romanic_number
         convert_to_arabic = 0
         try:

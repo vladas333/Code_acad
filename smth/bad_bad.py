@@ -6,11 +6,10 @@ class Read_from_terminal:
         self.number_for_chane = number_for_change
         
     def which_converter_select(self, number_for_change2: int):
-        self number_for_change2 =  number_for_change2
         if self.select_conv == "RA":
            return print("Romanic to Arabic")
         elif self.select_conv == "AR":
-           return number_for_change =  Arabic_to_romanic(input("Yoy select Arabic to change in Romanic. Please enter: "))
+           return number_for_change2 =  Arabic_to_romanic(input("Yoy select Arabic to change in Romanic. Please enter: "))
            #return print("Arabic to Romanic")
         return print(f"try")
 
